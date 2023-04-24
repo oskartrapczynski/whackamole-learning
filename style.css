@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./img/bgc.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+#nameGame {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  border: 2px white solid;
+  opacity: 0.8;
+}
+
+#scoreContainer {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.info {
+  background-color: rgb(64, 64, 64);
+  border-radius: 10px;
+  margin: 10px;
+  width: 150px;
+  padding: 10px 20px;
+  color: white;
+  border: 2px white solid;
+  opacity: 0.8;
+}
+
+#gameContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px 0;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 50vh;
+}
+
+.hole {
+  position: relative;
+}
+
+.stone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+.monster {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  transition: top 0.2s, width 0.2s;
+  cursor: crosshair;
+}
+
+.monsterActive {
+  top: 10%;
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px white solid;
+  background-color: rgb(64, 64, 64);
+  opacity: 0.8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: black;
+}

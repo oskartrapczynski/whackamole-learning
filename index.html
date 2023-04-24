@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whack a mole</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1 id="nameGame">Whack a mole - MONSTERS</h1>
+  <div id="scoreContainer">
+    <h3 class="info" id="time">Time: 0</h3>
+    <h3 class="info" id="score">Score: 0</h3>
+    <h3 class="info" id="mode">Mode: easy</h3>
+  </div>
+  <div id="gameContainer">
+    <div class="hole" id="hole1">
+      <img class="monster" id="monster1" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole2">
+      <img class="monster" id="monster2" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole3">
+      <img class="monster" id="monster3" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole4">
+      <img class="monster" id="monster4" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole5">
+      <img class="monster" id="monster5" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole6">
+      <img class="monster" id="monster6" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole7">
+      <img class="monster" id="monster7" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+    <div class="hole" id="hole8">
+      <img class="monster" id="monster8" src="./img/monster.png" alt="monster" />
+      <img class="stone" src="./img/stone.png" alt="stone" />
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="btn" onclick="newGame()">Nowa Gra</button>
+    <button class="btn" onclick="easy()">Poziom: Ławty</button>
+    <button class="btn" onclick="medium()">Poziom: Średni</button>
+    <button class="btn" onclick="hard()">Poziom: Trudny</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
