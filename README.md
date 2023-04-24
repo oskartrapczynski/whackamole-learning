@@ -2,5 +2,5 @@
 learning stuff
 simple whackamole game
 
-Demo
+## Demo
 https://oskartrapczynski.github.io/whackamole-learning/
